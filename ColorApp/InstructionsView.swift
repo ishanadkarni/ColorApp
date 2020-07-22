@@ -16,7 +16,7 @@ struct InstructionsView: View {
             Text("Click on the button with the color of the text, not the button with the text itself.").font(.system(size: 30, weight: .regular, design: .default)).multilineTextAlignment(.center)
             Text("yellow").foregroundColor(.blue).font(.system(size: 50, weight: .black, design: .rounded))
             Text("For example, this would be blue...").font(.system(size: 20, weight: .semibold, design: .rounded))
-            Text("blue").foregroundColor(.orange).font(.system(size: 50, weight: .black, design: .rounded))
+            Text("blue").foregroundColor(.orange).font(.system(size: 60, weight: .black, design: .rounded))
             Text("And this would be orange!").font(.system(size: 20, weight: .semibold, design: .rounded))
         }
     }
