@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043C416524C8B18C00389FB0 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C416424C8B18C00389FB0 /* InstructionsView.swift */; };
 		048C039224C61D9F00EEF72A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C039124C61D9F00EEF72A /* AppDelegate.swift */; };
 		048C039424C61D9F00EEF72A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C039324C61D9F00EEF72A /* SceneDelegate.swift */; };
 		048C039624C61D9F00EEF72A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C039524C61D9F00EEF72A /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043C416424C8B18C00389FB0 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
 		048C038E24C61D9F00EEF72A /* ColorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048C039124C61D9F00EEF72A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		048C039324C61D9F00EEF72A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				048C039124C61D9F00EEF72A /* AppDelegate.swift */,
 				048C039324C61D9F00EEF72A /* SceneDelegate.swift */,
 				048C039524C61D9F00EEF72A /* ContentView.swift */,
+				043C416424C8B18C00389FB0 /* InstructionsView.swift */,
 				048C039724C61DA200EEF72A /* Assets.xcassets */,
 				048C039C24C61DA200EEF72A /* LaunchScreen.storyboard */,
 				048C039F24C61DA200EEF72A /* Info.plist */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				048C039224C61D9F00EEF72A /* AppDelegate.swift in Sources */,
+				043C416524C8B18C00389FB0 /* InstructionsView.swift in Sources */,
 				048C039424C61D9F00EEF72A /* SceneDelegate.swift in Sources */,
 				048C039624C61D9F00EEF72A /* ContentView.swift in Sources */,
 			);

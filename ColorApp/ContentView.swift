@@ -7,14 +7,14 @@
 //
 
 import SwiftUI
-
+ 
 struct ContentView: View {
     @State private var buttonDisabled = true
     @State var score = 0
     @State var timer = 15
     @State var text = "Start"
-    @State var color = Color.green
-    @State var colorString = "green"
+    @State var color = Color.black
+    @State var colorString = "black"
     @State var dictionaryOfColors = [Color.red : "red", Color.green : "green", Color.blue : "blue", Color.black : "black", Color.orange : "orange", Color.pink : "pink", Color.purple : "purple", Color.yellow : "yellow",]
     @State var listOfColors = ["red", "green", "blue", "black", "orange", "pink", "purple", "yellow"]
     var body: some View {
