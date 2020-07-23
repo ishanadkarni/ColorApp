@@ -12,7 +12,7 @@ import Firebase
 
 struct ContentView: View {
     @State private var buttonDisabled = true
-    @State var player = "Isabelle"
+    @State var player = "Felicia"
     @State var score = 0
     @State var timer = 15
     @State var text = "Start"
