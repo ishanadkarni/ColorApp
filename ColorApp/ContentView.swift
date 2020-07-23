@@ -28,7 +28,11 @@ struct ContentView: View {
                     NavigationLink (destination : InstructionsView()){
                         Text("Instructions").font(.system(size: 20, weight: .bold, design: .rounded))
                         Image(systemName: "info.circle").font(.system(size: 20))
-                        }.foregroundColor(.white).padding().background(Color.blue).cornerRadius(20)//navigation link
+                        }.foregroundColor(.white).padding().background(Color.blue).cornerRadius(20)//instructions link
+                    NavigationLink (destination : LeaderboardView()){
+                    Text("Leaderboard").font(.system(size: 20, weight: .bold, design: .rounded))
+                    Image(systemName: "text.bubble").font(.system(size: 20))
+                    }.foregroundColor(.white).padding().background(Color.blue).cornerRadius(20)//leaderboard link
                 }//hstack
                 Text("Welcome to the Color Game!").font(Font.custom("AcademyEngravedLetPlain", size: 29)).foregroundColor(Color.black)
                 Text("Score: \(score)").font(.headline)

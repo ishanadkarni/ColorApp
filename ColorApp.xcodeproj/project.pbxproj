@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		043C416524C8B18C00389FB0 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C416424C8B18C00389FB0 /* InstructionsView.swift */; };
 		043C416724C8C6B200389FB0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 043C416624C8C6B100389FB0 /* GoogleService-Info.plist */; };
+		043C416B24C9FF0700389FB0 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C416A24C9FF0700389FB0 /* LeaderboardView.swift */; };
 		048C039224C61D9F00EEF72A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C039124C61D9F00EEF72A /* AppDelegate.swift */; };
 		048C039424C61D9F00EEF72A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C039324C61D9F00EEF72A /* SceneDelegate.swift */; };
 		048C039624C61D9F00EEF72A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C039524C61D9F00EEF72A /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		043C416424C8B18C00389FB0 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
 		043C416624C8C6B100389FB0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		043C416A24C9FF0700389FB0 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		048C038E24C61D9F00EEF72A /* ColorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048C039124C61D9F00EEF72A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		048C039324C61D9F00EEF72A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				048C039124C61D9F00EEF72A /* AppDelegate.swift */,
 				048C039324C61D9F00EEF72A /* SceneDelegate.swift */,
 				048C039524C61D9F00EEF72A /* ContentView.swift */,
+				043C416A24C9FF0700389FB0 /* LeaderboardView.swift */,
 				043C416424C8B18C00389FB0 /* InstructionsView.swift */,
 				048C039724C61DA200EEF72A /* Assets.xcassets */,
 				048C039C24C61DA200EEF72A /* LaunchScreen.storyboard */,
@@ -102,7 +105,6 @@
 				EE5CE8B4DE928660A315950F /* Pods-ColorApp.debug.xcconfig */,
 				0C4E5BDD8C39565138F3A5A0 /* Pods-ColorApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -222,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043C416B24C9FF0700389FB0 /* LeaderboardView.swift in Sources */,
 				048C039224C61D9F00EEF72A /* AppDelegate.swift in Sources */,
 				043C416524C8B18C00389FB0 /* InstructionsView.swift in Sources */,
 				048C039424C61D9F00EEF72A /* SceneDelegate.swift in Sources */,
