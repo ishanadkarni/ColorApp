@@ -7,9 +7,12 @@
 //
 
 import SwiftUI
- 
+import FirebaseFirestore
+import Firebase
+
 struct ContentView: View {
     @State private var buttonDisabled = true
+    @State var player = "Isabelle"
     @State var score = 0
     @State var timer = 15
     @State var text = "Start"
@@ -17,6 +20,7 @@ struct ContentView: View {
     @State var colorString = "black"
     @State var dictionaryOfColors = [Color.red : "red", Color.green : "green", Color.blue : "blue", Color.black : "black", Color.orange : "orange", Color.pink : "pink", Color.purple : "purple", Color.yellow : "yellow",]
     @State var listOfColors = ["red", "green", "blue", "black", "orange", "pink", "purple", "yellow"]
+    var db = Firestore.firestore()
     var body: some View {
         NavigationView {
             VStack(spacing:20) {
@@ -107,8 +111,42 @@ struct ContentView: View {
         else {
             text = "Start Over"
             buttonDisabled = true
+            self.checkScoreAndUpload()
         }
     } //countdown func
+    
+    func checkScoreAndUpload () {
+        let docRef = db.collection("leaderboard").document(player)
+        docRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                if var highScore = document.get("score") as? Int {
+                    print("userhighscore", highScore)
+                    if self.score > highScore {
+                        //new highscore, upload to firebase
+                        self.uploadScore ()
+                    }
+                }
+            } else {
+                print("document does not exist")
+                self.uploadScore()
+            }
+        }
+    }
+        
+        func uploadScore () {
+            db.collection("leaderboard").document(player).setData([
+                "name" : player,
+                "score" : score
+            ]){
+                err in
+                if let err = err {
+                    print("error writing in the document")
+                }
+                else {
+                    print("document successfully written!")
+                }
+            }
+        }
     
     func putNewColor () {
         color = dictionaryOfColors.keys.randomElement()! //chooses new text color
