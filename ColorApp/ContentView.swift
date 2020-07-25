@@ -12,7 +12,7 @@ import Firebase
 
 struct ContentView: View {
     @State private var buttonDisabled = true
-    @State var player = "Felicia"
+    @State var player : String
     @State var score = 0
     @State var timer = 15
     @State var text = "Start"
@@ -22,7 +22,6 @@ struct ContentView: View {
     @State var listOfColors = ["red", "green", "blue", "black", "orange", "pink", "purple", "yellow"]
     var db = Firestore.firestore()
     var body: some View {
-        NavigationView {
             VStack(spacing:20) {
                 HStack {
                     NavigationLink (destination : InstructionsView()){
@@ -88,9 +87,8 @@ struct ContentView: View {
                 }//vstack2
                 .padding(.horizontal,20)
                     .navigationBarTitle("Welcome to the color game!", displayMode: .inline)
+                .navigationBarBackButtonHidden(true)
             }//vstack1
-
-        }//navigation view
     }//body
     func startGame () {
         if timer == 15 {
@@ -176,6 +174,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(player: "Isha")
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041CD81A24CB603500751F95 /* StartUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CD81924CB603400751F95 /* StartUpView.swift */; };
 		043C416524C8B18C00389FB0 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C416424C8B18C00389FB0 /* InstructionsView.swift */; };
 		043C416724C8C6B200389FB0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 043C416624C8C6B100389FB0 /* GoogleService-Info.plist */; };
 		043C416B24C9FF0700389FB0 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C416A24C9FF0700389FB0 /* LeaderboardView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041CD81924CB603400751F95 /* StartUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpView.swift; sourceTree = "<group>"; };
 		043C416424C8B18C00389FB0 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
 		043C416624C8C6B100389FB0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		043C416A24C9FF0700389FB0 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				048C039124C61D9F00EEF72A /* AppDelegate.swift */,
 				048C039324C61D9F00EEF72A /* SceneDelegate.swift */,
 				048C039524C61D9F00EEF72A /* ContentView.swift */,
+				041CD81924CB603400751F95 /* StartUpView.swift */,
 				043C416A24C9FF0700389FB0 /* LeaderboardView.swift */,
 				043C416424C8B18C00389FB0 /* InstructionsView.swift */,
 				048C039724C61DA200EEF72A /* Assets.xcassets */,
@@ -228,6 +231,7 @@
 				048C039224C61D9F00EEF72A /* AppDelegate.swift in Sources */,
 				043C416524C8B18C00389FB0 /* InstructionsView.swift in Sources */,
 				048C039424C61D9F00EEF72A /* SceneDelegate.swift in Sources */,
+				041CD81A24CB603500751F95 /* StartUpView.swift in Sources */,
 				048C039624C61D9F00EEF72A /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
